@@ -1,0 +1,24 @@
+[project]
+name = "openai-sdk"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "natrajexplore@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "openai-agents>=0.22.2",
+    "python-dotenv>=1.2.3",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.32.0",
+    "redis>=5.0.0",
+    "psutil>=7.2.2",
+]
+
+[project.scripts]
+openai-sdk = "openai_sdk:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
