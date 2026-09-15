@@ -1,6 +1,18 @@
-# IT Ops Assistant
+# IT Ops Assistant — Agentic IT Operations Platform
 
-A hands-on curriculum for the [OpenAI Agents SDK](https://github.com/openai/openai-agents-python), built step by step into a working reference implementation: a multi-team **IT Operations dashboard** where real AI agents monitor infrastructure domains, propose change requests, and route them through human-in-the-loop manager approval before anything happens.
+**A multi-agent IT Operations command center, built step by step from the ground up on the OpenAI Agents SDK.**
+
+Seven specialized AI agents monitor real infrastructure domains, propose change requests, and route every consequential action through human-in-the-loop manager approval — backed by a 22-step curriculum that teaches every concept behind it, from "hello world" to production-hardening.
+
+---
+
+## Usable applications in this repo
+
+| App | What it is | How to run it |
+|---|---|---|
+| 🖥️ **IT Ops Dashboard** | The main product: a full-stack web app (FastAPI + React) where 7 team agents report live status and submit change requests for manager approval. This is what you'd demo. | See [Getting started](#getting-started) |
+| 📚 **22 curriculum lessons** | Standalone, independently runnable Python scripts (`src/openai_sdk/lessons/`) — each one teaches and demonstrates a single Agents SDK concept end to end, with real output. | `uv run python src/openai_sdk/lessons/step1_hello_agent.py` (or any `stepN_*.py`) |
+| 🔌 **3 local MCP servers** | Standalone servers (`mcp_infra_server*.py`) exposing real tool endpoints over stdio and HTTP — used by lessons 8, 20, and 21, but runnable and inspectable on their own. | Launched automatically by the lessons that use them |
 
 This repository is two things at once:
 
